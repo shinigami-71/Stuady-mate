@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF - Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-page">
+    <header class="topbar">
+        <a class="brand" href="dashboard.php" aria-label="Study Planner dashboard">
+            <span class="brand-mark">SP</span>
+            <span>
+                <strong>Study Planner</strong>
+                <small>AI PDF workspace</small>
+            </span>
+        </a>
+        <nav class="topnav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="dashboard.php">Dashboard</a>
+            <a href="chat.php">AI Chat</a>
+            <a href="logout.php">Logout</a>
+        </nav>
+    </header>
+
+    <main class="page-shell narrow-shell">
+        <section class="page-intro">
+            <span class="eyebrow">Upload</span>
+            <h1>Add a study PDF for instant analysis.</h1>
+            <p>Study Planner will create a structured summary, difficulty rating, estimated study time, and study plan.</p>
+        </section>
+
+        <form class="panel-form upload-panel" action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="file">PDF file</label>
+            <input id="file" type="file" name="file" accept="application/pdf,.pdf" required>
+            <button type="submit">Upload and Analyze</button>
+        </form>
+    </main>
+</body>
+</html>

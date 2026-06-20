@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <main class="auth-card">
+        <a class="brand auth-brand" href="index.html" aria-label="Study Planner">
+            <span class="brand-mark">SP</span>
+            <span>
+                <strong>Study Planner</strong>
+                <small>AI PDF workspace</small>
+            </span>
+        </a>
+
+        <div class="auth-heading">
+            <span class="eyebrow">Welcome back</span>
+            <h1>Sign in to continue studying.</h1>
+        </div>
+
+        <form class="auth-form" action="login.php" method="POST">
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" autocomplete="email" required>
+
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" autocomplete="current-password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p class="switch-link">New here? <a href="register.html">Create an account</a></p>
+        <p class="switch-link subtle-link"><a href="index.html">Back to home</a></p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,3 @@
+# No required packages.
+# Optional for better PDF extraction when internet is available:
+# pymupdf
