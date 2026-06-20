@@ -155,7 +155,7 @@ Upload and chat features need this backend running. Normal pages, registration, 
 2. The user uploads a PDF file.
 3. PHP saves the file in the `uploads/` folder.
 4. `ai_service.php` sends the file name to the local Python backend.
-5. The Python backend extracts readable text from the PDF.
+5. This Python backend extracts readable text from the PDF.
 6. It estimates difficulty, study time, summary, suggested questions, and a study plan.
 7. PHP saves the result in the `ai_results` table.
 8. The dashboard displays the study plan, summary, reminders, and chat actions.
